@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<div class="page">
+    <div class="header">
+        <img src="images/NGTU.png" alt="Логотип нгту" class="header__img">
+        <h2 class="header__title">Новосибирский государственный технический университет</h2>
+        <h2 class="header__subtitle">Кафедра Автоматизированных систем управления</h2>
+        <h2 class="header__subtitle">Основы git и JS</h2>
+        <div class="header__names">
+            <div class="students">
+                <p>Выполнил:</p>
+                <p>Белов В.Д.</p>
+            </div>
+            <div class="teacher">
+                <p>Проверила:</p>
+                <p>Кирьянова Е.С.</p>
+            </div>
+        </div>
+    </div>
+    <h2 class="cats-header">Задание 1: Галерея</h2>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img alt="Фото кота" src="images/Leva/kot1.jpg"></div>
+            <div class="swiper-slide"><img alt="Фото кота" src="images/Leva/kot2.jpg"></div>
+            <div class="swiper-slide"><img alt="Фото кота" src="images/Shleppa/shlep1.jpg"></div>
+            <div class="swiper-slide"><img alt="Фото кота" src="images/Shleppa/nkat.jpg"></div>
+            <div class="swiper-slide"><img alt="Фото кота" src="images/Shleppa/kot3.jpg"></div>
+            <div class="swiper-slide"><img alt="Фото кота" src="images/Shleppa/kot4.jpg"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <main class="content">
+        <div class="vacancies">
+            <h2>Вакансии HH.ru</h2>
+            <div class="inputs">
+                <input placeholder="Название вакансии" id="vacancyId">
+                <input placeholder="Количество" type="number" id="vacancy_amount">
+            </div>
+            <button id="load_vacancy">Загрузить вакансии</button>
+            <div id="vacancy"></div>
+        </div>
+    </main>
+
+</div>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</body>
+</html>
